@@ -5,4 +5,4 @@
 ps aux --sort=-%cpu | awk 'NR==1{print $2,$3,$11}NR>1{if($3!=0.0) print $2,$3,$11}' >> Test.tx
 
 #Printing Text file and emailing using Mailx
-cat Test.txt | mailx -r "rcraja82@gmail.com" -s "SUBJECT" "CPU Usage"
+cat Test.txt | mailx -s "SUBJECT" "CPU Usage" rajacraghunapu@outlook.com
